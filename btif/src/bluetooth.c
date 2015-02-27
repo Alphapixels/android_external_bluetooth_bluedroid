@@ -63,6 +63,9 @@
 #define BT_LE_LPP_MONITOR_RSSI_START 0x0002
 #define BT_LE_LPP_MONITOR_RSSI_STOP  0x0003
 #define BT_LE_LPP_READ_RSSI_THRESH   0x0004
+#define WRITE_RSSI_MONITOR_THRESHOLD      0xF2
+#define READ_RSSI_MONITOR_THRESHOLD       0xF3
+#define ENABLE_RSSI_MONITOR               0xF4
 
 #define is_profile(profile, str) ((strlen(str) == strlen(profile)) && strncmp((const char *)profile, str, strlen(str)) == 0)
 

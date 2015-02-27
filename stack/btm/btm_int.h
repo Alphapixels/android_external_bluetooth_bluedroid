@@ -42,7 +42,7 @@
 #endif
 #endif
 
-typedef void tBTM_BLE_MULTI_ADV_CB;
+typedef struct {} tBTM_BLE_MULTI_ADV_CB;
 
 tBTM_BLE_MULTI_ADV_CB  btm_multi_adv_cb;
 
