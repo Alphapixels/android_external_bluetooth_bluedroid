@@ -2573,7 +2573,7 @@ static void bta_dm_discover_device(BD_ADDR remote_bd_addr)
     }
 
     if((bta_dm_search_cb.p_btm_inq_info)
-       && (bta_dm_search_cb.p_btm_inq_info->results.device_type == BT_DEVICE_TYPE_BLE)
+      /* && (bta_dm_search_cb.p_btm_inq_info->results.device_type == BT_DEVICE_TYPE_BLE) */
        && (bta_dm_search_cb.state == BTA_DM_SEARCH_ACTIVE))
     {
         /* Do not perform RNR for LE devices at inquiry complete*/
