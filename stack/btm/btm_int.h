@@ -37,14 +37,11 @@
 
 #if (BLE_INCLUDED == TRUE)
 #include "btm_ble_int.h"
+tBTM_BLE_MULTI_ADV_CB  btm_multi_adv_cb;
 #if (SMP_INCLUDED == TRUE)
 #include "smp_api.h"
 #endif
 #endif
-
-typedef struct {} tBTM_BLE_MULTI_ADV_CB;
-
-tBTM_BLE_MULTI_ADV_CB  btm_multi_adv_cb;
 
 #if BTM_MAX_LOC_BD_NAME_LEN > 0
 typedef char tBTM_LOC_BD_NAME[BTM_MAX_LOC_BD_NAME_LEN + 1];
