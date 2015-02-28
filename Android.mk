@@ -11,6 +11,7 @@ else
   bdroid_CFLAGS += -DHAS_NO_BDROID_BUILDCFG
 endif
 
+# STFU
 bdroid_CFLAGS += -Wno-error
 bdroid_CFLAGS += -DAVK_BACKPORT
 
