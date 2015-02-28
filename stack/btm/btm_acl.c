@@ -40,6 +40,10 @@
 #include "bd.h"
 #include "bt_utils.h"
 
+#if BLE_INCLUDED == TRUE
+ #include "../include/btm_ble_api.h"
+#endif
+
 static void btm_read_remote_features (UINT16 handle);
 static void btm_read_remote_ext_features (UINT16 handle, UINT8 page_number);
 static void btm_process_remote_ext_features_page (tACL_CONN *p_acl_cb, tBTM_SEC_DEV_REC *p_dev_rec,
